@@ -1,0 +1,58 @@
+name: watch npm for new @shopify/dev-mcp versions
+
+on:
+  schedule:
+    - cron: "17 6 * * *" # daily, 06:17 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: watch
+  cancel-in-progress: false
+
+jobs:
+  record:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Find versions not yet recorded
+        id: new
+        run: |
+          node scripts/check-new.mjs > new-versions.txt
+          cat new-versions.txt
+          echo "count=$(grep -c . new-versions.txt || true)" >> "$GITHUB_OUTPUT"
+          echo "list=$(tr '\n' ' ' < new-versions.txt | sed 's/ *$//')" >> "$GITHUB_OUTPUT"
+
+      - name: Record and diff each new version
+        if: steps.new.outputs.count != '0'
+        run: |
+          for v in ${{ steps.new.outputs.list }}; do
+            node scripts/collect.mjs "$v"
+            node scripts/diff.mjs "$v"
+          done
+          rm new-versions.txt
+
+      - name: Open a pull request for review
+        if: steps.new.outputs.count != '0'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          versions="${{ steps.new.outputs.list }}"
+          branch="record/$(date -u +%Y%m%d-%H%M)"
+          git config user.name "shopify-dev-mcp-changelog bot"
+          git config user.email "actions@users.noreply.github.com"
+          git checkout -b "$branch"
+          git add data/versions
+          git commit -m "Record @shopify/dev-mcp ${versions}"
+          git push origin "$branch"
+          body="New version(s) recorded: ${versions}"$'\n\n'"Review each \`data/versions/<version>/diff.md\`, write the CHANGELOG.md entry, then run \`node scripts/build-feed.mjs\` before merging."
+          gh pr create --title "Record @shopify/dev-mcp ${versions}" --body "$body" --base "${{ github.event.repository.default_branch }}" --head "$branch"

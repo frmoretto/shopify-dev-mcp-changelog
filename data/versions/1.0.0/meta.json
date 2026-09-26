@@ -1,0 +1,33 @@
+{
+ "version": "1.0.0",
+ "published": "2025-03-20T14:56:08.320Z",
+ "collected": "2026-09-26",
+ "run": "ok",
+ "serverInfo": {
+  "name": "shopify-dev-mcp",
+  "version": "1.0.0"
+ },
+ "protocolVersion": "2024-11-05",
+ "license": "ISC",
+ "repository": null,
+ "dependencies": {
+  "@modelcontextprotocol/sdk": "^1.6.1",
+  "eventsource-parser": "^1.0.0",
+  "zod": "^3.24.2"
+ },
+ "internalDevTools": null,
+ "fileCount": 9,
+ "hasReadme": true,
+ "bundledData": {
+  "graphqlSchemas": [
+   "admin_schema_2025-01"
+  ],
+  "componentSchemas": [],
+  "apiInstructions": [],
+  "typeDeclarations": {
+   "files": 0,
+   "packages": []
+  },
+  "internalEvalFiles": 0
+ }
+}

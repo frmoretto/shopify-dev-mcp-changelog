@@ -1,0 +1,71 @@
+{
+ "version": "1.7.1",
+ "published": "2026-03-12T15:12:12.950Z",
+ "collected": "2026-09-26",
+ "run": "ok",
+ "serverInfo": {
+  "name": "shopify-dev-mcp",
+  "version": "1.7.1"
+ },
+ "protocolVersion": "2024-11-05",
+ "license": "ISC",
+ "repository": null,
+ "dependencies": {
+  "@modelcontextprotocol/sdk": "1.27.1",
+  "@react-router/dev": "7.13.1",
+  "@shopify/app-bridge-types": "0.7.0",
+  "@shopify/hydrogen": "2026.1.1",
+  "@shopify/hydrogen-react": "2026.1.0",
+  "@shopify/polaris-types": "1.0.1",
+  "@shopify/theme-check-common": "3.23.0",
+  "@shopify/theme-check-docs-updater": "3.23.0",
+  "@shopify/theme-check-node": "3.23.0",
+  "@shopify/ui-extensions": "2026.1.1",
+  "@types/react": "19.2.14",
+  "graphql": "16.13.1",
+  "preact": "10.28.4",
+  "react-router": "7.13.1",
+  "schema-dts": "1.1.5",
+  "toml": "3.0.0",
+  "type-fest": "5.4.4",
+  "typescript": "5.9.3",
+  "zod": "4.3.6"
+ },
+ "internalDevTools": {
+  "where": "devDependencies",
+  "version": "1.4.0"
+ },
+ "fileCount": 183,
+ "hasReadme": false,
+ "bundledData": {
+  "graphqlSchemas": [
+   "admin_2026-01",
+   "customer_2026-01",
+   "functions_cart_checkout_validation_schema_2026-01",
+   "functions_cart_transform_schema_2026-01",
+   "functions_delivery_customization_schema_2026-01",
+   "functions_discount_schema_2026-01",
+   "functions_discounts_allocator_unstable",
+   "functions_fulfillment_constraints_schema_2026-01",
+   "functions_local_pickup_delivery_option_generator_unstable",
+   "functions_order_discounts_2025-10",
+   "functions_order_routing_location_rule_schema_2026-01",
+   "functions_payment_customization_schema_2026-01",
+   "functions_pickup_point_delivery_option_generator_unstable",
+   "functions_product_discounts_2025-10",
+   "functions_shipping_discounts_2025-10",
+   "partner_2026-01",
+   "payments-apps_2026-01",
+   "storefront-graphql_2026-01"
+  ],
+  "componentSchemas": [
+   "storefront-web-components"
+  ],
+  "apiInstructions": [],
+  "typeDeclarations": {
+   "files": 0,
+   "packages": []
+  },
+  "internalEvalFiles": 70
+ }
+}

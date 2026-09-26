@@ -1,0 +1,4 @@
+node_modules/
+new-versions.txt
+*.tgz
+.DS_Store

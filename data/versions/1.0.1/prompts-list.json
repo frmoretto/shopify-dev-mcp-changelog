@@ -1,0 +1,14 @@
+{
+ "prompts": [
+  {
+   "name": "shopify-admin-graphql",
+   "arguments": [
+    {
+     "name": "query",
+     "description": "The specific Shopify Admin API question or request",
+     "required": true
+    }
+   ]
+  }
+ ]
+}

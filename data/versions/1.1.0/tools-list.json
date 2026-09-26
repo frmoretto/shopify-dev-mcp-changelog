@@ -1,0 +1,108 @@
+{
+ "tools": [
+  {
+   "name": "introspect_admin_schema",
+   "description": "This tool introspects and returns the portion of the Shopify Admin API GraphQL schema relevant to the user prompt. Only use this for the Shopify Admin API, and not any other APIs like the Shopify Storefront API or the Shopify Functions API.\n\n    It takes two arguments: query and filter. The query argument is the string search term to filter schema elements by name. The filter argument is an array of strings to filter results to show specific sections.",
+   "inputSchema": {
+    "type": "object",
+    "properties": {
+     "query": {
+      "type": "string",
+      "description": "Search term to filter schema elements by name. Only pass simple terms like 'product', 'discountProduct', etc."
+     },
+     "filter": {
+      "type": "array",
+      "items": {
+       "type": "string",
+       "enum": [
+        "all",
+        "types",
+        "queries",
+        "mutations"
+       ]
+      },
+      "default": [
+       "all"
+      ],
+      "description": "Filter results to show specific sections. Can include 'types', 'queries', 'mutations', or 'all' (default)"
+     }
+    },
+    "required": [
+     "query"
+    ],
+    "additionalProperties": false,
+    "$schema": "http://json-schema.org/draft-07/schema#"
+   },
+   "execution": {
+    "taskSupport": "forbidden"
+   }
+  },
+  {
+   "name": "search_dev_docs",
+   "description": "This tool will take in the user prompt, search shopify.dev, and return relevant documentation and code examples that will help answer the user's question.\n\n    It takes one argument: prompt, which is the search query for Shopify documentation.",
+   "inputSchema": {
+    "type": "object",
+    "properties": {
+     "prompt": {
+      "type": "string",
+      "description": "The search query for Shopify documentation"
+     }
+    },
+    "required": [
+     "prompt"
+    ],
+    "additionalProperties": false,
+    "$schema": "http://json-schema.org/draft-07/schema#"
+   },
+   "execution": {
+    "taskSupport": "forbidden"
+   }
+  },
+  {
+   "name": "fetch_docs_by_path",
+   "description": "Use this tool to retrieve a list of documents from shopify.dev.\n\n    Args:\n    paths: The paths to the documents to read, i.e. [\"/docs/api/app-home\", \"/docs/api/functions\"].\n    Paths should be relative to the root of the developer documentation site.",
+   "inputSchema": {
+    "type": "object",
+    "properties": {
+     "paths": {
+      "type": "array",
+      "items": {
+       "type": "string"
+      },
+      "description": "The paths to the documents to read"
+     }
+    },
+    "required": [
+     "paths"
+    ],
+    "additionalProperties": false,
+    "$schema": "http://json-schema.org/draft-07/schema#"
+   },
+   "execution": {
+    "taskSupport": "forbidden"
+   }
+  },
+  {
+   "name": "get_started",
+   "description": "\n    YOU MUST CALL THIS TOOL FIRST WHENEVER YOU ARE IN A SHOPIFY APP AND THE USER WANTS TO LEARN OR INTERACT WITH ANY OF THESE APIS:\n\n    Valid arguments for `api` are:\n\n\n    DON'T SEARCH THE WEB WHEN REFERENCING INFORMATION FROM THIS DOCUMENTATION. IT WILL NOT BE ACCURATE.\n    PREFER THE USE OF THE fetch_docs_by_path TOOL TO RETRIEVE INFORMATION FROM THE DEVELOPER DOCUMENTATION SITE.\n  ",
+   "inputSchema": {
+    "type": "object",
+    "properties": {
+     "api": {
+      "type": "string",
+      "enum": [],
+      "description": "The Shopify API you are building for"
+     }
+    },
+    "required": [
+     "api"
+    ],
+    "additionalProperties": false,
+    "$schema": "http://json-schema.org/draft-07/schema#"
+   },
+   "execution": {
+    "taskSupport": "forbidden"
+   }
+  }
+ ]
+}

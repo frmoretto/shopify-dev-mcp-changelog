@@ -1,0 +1,91 @@
+{
+ "version": "1.13.2",
+ "published": "2026-05-19T19:36:32.386Z",
+ "collected": "2026-09-26",
+ "run": "ok",
+ "serverInfo": {
+  "name": "shopify-dev-mcp",
+  "version": "1.13.2"
+ },
+ "protocolVersion": "2024-11-05",
+ "license": "ISC",
+ "repository": null,
+ "dependencies": {
+  "@modelcontextprotocol/sdk": "1.29.0",
+  "@react-router/dev": "7.13.2",
+  "@shopify/app-bridge-types": "0.7.0",
+  "@shopify/cli": ">=3.93.1",
+  "@shopify/hydrogen": "2026.1.3",
+  "@shopify/hydrogen-react": "2026.1.2",
+  "@shopify/polaris-types": "1.0.1",
+  "@shopify/theme-check-common": "3.24.0",
+  "@shopify/theme-check-docs-updater": "3.24.0",
+  "@shopify/theme-check-node": "3.24.0",
+  "@shopify/ui-extensions": "2026.1.1",
+  "graphql": "16.13.2",
+  "@types/react": "19.2.14",
+  "preact": "10.28.4",
+  "react-router": "7.13.2",
+  "schema-dts": "1.1.5",
+  "toml": "3.0.0",
+  "type-fest": "5.5.0",
+  "typescript": "5.9.3",
+  "zod": "4.3.6"
+ },
+ "internalDevTools": {
+  "where": "devDependencies",
+  "version": "1.9.0"
+ },
+ "fileCount": 89,
+ "hasReadme": false,
+ "bundledData": {
+  "graphqlSchemas": [
+   "admin_2026-04",
+   "customer_2026-04",
+   "functions_cart_checkout_validation_2026-04",
+   "functions_cart_transform_2026-04",
+   "functions_delivery_customization_2026-04",
+   "functions_discount_2026-04",
+   "functions_discounts_allocator_unstable",
+   "functions_fulfillment_constraints_2026-04",
+   "functions_local_pickup_delivery_option_generator_unstable",
+   "functions_order_discounts_2026-04",
+   "functions_order_routing_location_rule_2026-04",
+   "functions_payment_customization_2026-04",
+   "functions_pickup_point_delivery_option_generator_unstable",
+   "functions_product_discounts_2026-04",
+   "functions_shipping_discounts_2026-04",
+   "partner_2026-04",
+   "payments-apps_2026-04",
+   "storefront-graphql_2026-04"
+  ],
+  "componentSchemas": [],
+  "apiInstructions": [
+   "admin",
+   "app-store-review",
+   "custom-data",
+   "customer",
+   "functions",
+   "hydrogen",
+   "liquid",
+   "onboarding-dev",
+   "onboarding-merchant",
+   "partner",
+   "payments-apps",
+   "polaris-admin-extensions",
+   "polaris-app-home",
+   "polaris-checkout-extensions",
+   "polaris-customer-account-extensions",
+   "pos-ui",
+   "storefront-graphql",
+   "storefront-web-components",
+   "ucp",
+   "use-shopify-cli"
+  ],
+  "typeDeclarations": {
+   "files": 0,
+   "packages": []
+  },
+  "internalEvalFiles": 0
+ }
+}

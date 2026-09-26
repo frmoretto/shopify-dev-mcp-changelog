@@ -1,0 +1,78 @@
+{
+ "version": "1.5.1",
+ "published": "2025-12-01T11:00:42.415Z",
+ "collected": "2026-09-26",
+ "run": "ok",
+ "serverInfo": {
+  "name": "shopify-dev-mcp",
+  "version": "1.5.1"
+ },
+ "protocolVersion": "2024-11-05",
+ "license": "ISC",
+ "repository": null,
+ "dependencies": {
+  "@modelcontextprotocol/sdk": "^1.17.4",
+  "@shopify/app-bridge-types": "^0.5.0",
+  "@shopify/hydrogen": "^2025.7.0",
+  "@shopify/polaris-types": "^1.0.1",
+  "@shopify/theme-check-common": "^3.20.0",
+  "@shopify/theme-check-docs-updater": "^3.20.0",
+  "@shopify/theme-check-node": "^3.20.0",
+  "@shopify/ui-extensions": "^2025.10.2",
+  "@types/react": "^19.2.2",
+  "env-paths": "^3.0.0",
+  "execa": "^8.0.1",
+  "graphql": "^16.11.0",
+  "preact": "^10.27.2",
+  "toml": "^3.0.0",
+  "typescript": "^5.8.2",
+  "zod": "^3.24.2"
+ },
+ "internalDevTools": {
+  "where": "devDependencies",
+  "version": "1.3.0"
+ },
+ "fileCount": 177,
+ "hasReadme": false,
+ "bundledData": {
+  "graphqlSchemas": [
+   "admin_2025-07",
+   "admin_2025-10",
+   "customer_2025-07",
+   "customer_2025-10",
+   "functions_cart_checkout_validation_2025-10",
+   "functions_cart_transform_2025-10",
+   "functions_delivery_customization_2025-10",
+   "functions_discount_2025-10",
+   "functions_discounts_allocator_unstable",
+   "functions_fulfillment_constraints_2025-10",
+   "functions_local_pickup_delivery_option_generator_unstable",
+   "functions_order_discounts_2025-10",
+   "functions_order_routing_location_rule_2025-10",
+   "functions_payment_customization_2025-10",
+   "functions_pickup_point_delivery_option_generator_unstable",
+   "functions_product_discounts_2025-10",
+   "functions_shipping_discounts_2025-10",
+   "partner_2025-07",
+   "payments-apps_2025-07",
+   "payments-apps_2025-10",
+   "storefront-graphql_2025-07",
+   "storefront-graphql_2025-10"
+  ],
+  "componentSchemas": [
+   "hydrogen_2025-05",
+   "polaris-admin-extensions_2025-10",
+   "polaris-app-home",
+   "polaris-checkout-extensions_2025-10",
+   "polaris-customer-account-extensions_2025-10",
+   "pos-ui_2025-10",
+   "storefront-web-components"
+  ],
+  "apiInstructions": [],
+  "typeDeclarations": {
+   "files": 0,
+   "packages": []
+  },
+  "internalEvalFiles": 60
+ }
+}

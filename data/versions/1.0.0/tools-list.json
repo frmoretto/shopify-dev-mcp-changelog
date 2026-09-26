@@ -1,0 +1,46 @@
+{
+ "tools": [
+  {
+   "name": "introspect-admin-schema",
+   "description": "Introspect the Shopify Admin GraphQL schema. Only use this for the Shopify Admin API, not for other APIs like Storefront API or Functions API.",
+   "inputSchema": {
+    "type": "object",
+    "properties": {
+     "query": {
+      "type": "string",
+      "description": "Search term to filter schema elements by name. Only pass simple terms like 'product', 'discountProduct', etc."
+     }
+    },
+    "required": [
+     "query"
+    ],
+    "additionalProperties": false,
+    "$schema": "http://json-schema.org/draft-07/schema#"
+   },
+   "execution": {
+    "taskSupport": "forbidden"
+   }
+  },
+  {
+   "name": "search-dev-docs",
+   "description": "Search Shopify developer documentation",
+   "inputSchema": {
+    "type": "object",
+    "properties": {
+     "prompt": {
+      "type": "string",
+      "description": "The search query for Shopify documentation"
+     }
+    },
+    "required": [
+     "prompt"
+    ],
+    "additionalProperties": false,
+    "$schema": "http://json-schema.org/draft-07/schema#"
+   },
+   "execution": {
+    "taskSupport": "forbidden"
+   }
+  }
+ ]
+}

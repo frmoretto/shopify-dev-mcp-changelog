@@ -1,0 +1,52 @@
+{
+ "version": "1.4.0",
+ "published": "2025-10-01T10:31:27.446Z",
+ "collected": "2026-09-26",
+ "run": "ok",
+ "serverInfo": {
+  "name": "shopify-dev-mcp",
+  "version": "1.4.0"
+ },
+ "protocolVersion": "2024-11-05",
+ "license": "ISC",
+ "repository": null,
+ "dependencies": {
+  "@modelcontextprotocol/sdk": "^1.17.4",
+  "@shopify/theme-check-common": "^3.20.0",
+  "@shopify/theme-check-docs-updater": "^3.20.0",
+  "@shopify/theme-check-node": "^3.20.0",
+  "env-paths": "^3.0.0",
+  "graphql": "^16.11.0",
+  "zod": "^3.24.2"
+ },
+ "internalDevTools": {
+  "where": "devDependencies",
+  "version": "1.1.0"
+ },
+ "fileCount": 16,
+ "hasReadme": false,
+ "bundledData": {
+  "graphqlSchemas": [
+   "admin_2025-07",
+   "customer_2025-07",
+   "partner_2025-07",
+   "payments-apps_2025-07",
+   "storefront-graphql_2025-07"
+  ],
+  "componentSchemas": [
+   "hydrogen_2025-05",
+   "polaris-admin-extensions_2025-10-rc",
+   "polaris-app-home",
+   "polaris-checkout-extensions_2025-10-rc",
+   "polaris-customer-account-extensions_2025-10-rc",
+   "pos-ui_2025-10-rc",
+   "storefront-web-components"
+  ],
+  "apiInstructions": [],
+  "typeDeclarations": {
+   "files": 0,
+   "packages": []
+  },
+  "internalEvalFiles": 0
+ }
+}

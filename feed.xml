@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>@shopify/dev-mcp — independent changelog</title>
+  <subtitle>Every published version of the Shopify Dev MCP server, recorded and diffed.</subtitle>
+  <link href="https://frmoretto.github.io/shopify-dev-mcp-changelog/feed.xml" rel="self"/>
+  <link href="https://frmoretto.github.io/shopify-dev-mcp-changelog/CHANGELOG"/>
+  <id>https://frmoretto.github.io/shopify-dev-mcp-changelog/</id>
+  <updated>2026-09-25T00:00:00Z</updated>
+  <entry>
+    <title>@shopify/dev-mcp 1.16.0 — 2026-09-25</title>
+    <link href="https://frmoretto.github.io/shopify-dev-mcp-changelog/CHANGELOG#1160-2026-09-25"/>
+    <id>https://frmoretto.github.io/shopify-dev-mcp-changelog/versions/1.16.0</id>
+    <updated>2026-09-25T00:00:00Z</updated>
+    <category term="breaking"/>
+    <content type="text">- `validate_graphql_codeblocks` and `validate_component_codeblocks` are **merged into one tool, `validate`**, which dispatches on its `api` argument. `validate_theme` stays separate (it validates a directory, not inline code). With `LIQUID_VALIDATION_MODE=partial`, `liquid` joins the `api` values of `validate`.
+- Prompts, skills or agents that call the old tool names by name will fail.
+- 5 tools, ~6,480 tokens.</content>
+  </entry>
+  <entry>
+    <title>@shopify/dev-mcp 1.15.4 — 2026-09-18</title>
+    <link href="https://frmoretto.github.io/shopify-dev-mcp-changelog/CHANGELOG#1154-2026-09-18"/>
+    <id>https://frmoretto.github.io/shopify-dev-mcp-changelog/versions/1.15.4</id>
+    <updated>2026-09-18T00:00:00Z</updated>
+
+    <content type="text">- Bundles `@shopify/ui-extensions` **2026.10.0-rc.11** type declarations.</content>
+  </entry>
+  <entry>
+    <title>@shopify/dev-mcp 1.15.3 — 2026-09-17</title>
+    <link href="https://frmoretto.github.io/shopify-dev-mcp-changelog/CHANGELOG#1153-2026-09-17"/>
+    <id>https://frmoretto.github.io/shopify-dev-mcp-changelog/versions/1.15.3</id>
+    <updated>2026-09-17T00:00:00Z</updated>
+
+    <content type="text">- Polaris App Home versions addressed as `v1.0` / `v1.1`; bundles `polaris-types` 1.1.0-rc.1.</content>
+  </entry>
+  <entry>
+    <title>@shopify/dev-mcp 1.15.2 — 2026-09-11 · 1.15.1 — 2026-09-10</title>
+    <link href="https://frmoretto.github.io/shopify-dev-mcp-changelog/CHANGELOG#1152-2026-09-11-1151-2026-09-10"/>
+    <id>https://frmoretto.github.io/shopify-dev-mcp-changelog/versions/1.15.2</id>
+    <updated>2026-09-11T00:00:00Z</updated>
+
+    <content type="text">- Updated per-API instructions (Hydrogen, Storefront, onboarding, checkout, POS).</content>
+  </entry>
+  <entry>
+    <title>@shopify/dev-mcp 1.15.0 — 2026-09-02</title>
+    <link href="https://frmoretto.github.io/shopify-dev-mcp-changelog/CHANGELOG#1150-2026-09-02"/>
+    <id>https://frmoretto.github.io/shopify-dev-mcp-changelog/versions/1.15.0</id>
+    <updated>2026-09-02T00:00:00Z</updated>
+    <category term="telemetry"/>
+    <category term="api"/>
+    <content type="text">- **New tool `feedback`**: *"Report an AI Toolkit capability scorecard grading how these Shopify tools performed this turn"*. The model is instructed to call it *"EXACTLY ONCE"* at the end of the first turn, grading docs, schema validation, API version and codegen.
+- When available, the feedback id is built from the host assistant's session id (`CLAUDE_SESSION_ID`, `CLAUDE_CODE_SESSION_ID`, `CURSOR_SESSION_ID` or `COPILOT_SESSION_ID`). See [Telemetry](#telemetry).
+- New API `app-pricing`. **The README returns** to the package after a year.
+- 6 tools, ~7,990 tokens.</content>
+  </entry>
+  <entry>
+    <title>@shopify/dev-mcp 1.14.7 — 2026-08-28 · 1.14.6 — 2026-08-27</title>
+    <link href="https://frmoretto.github.io/shopify-dev-mcp-changelog/CHANGELOG#1147-2026-08-28-1146-2026-08-27"/>
+    <id>https://frmoretto.github.io/shopify-dev-mcp-changelog/versions/1.14.7</id>
+    <updated>2026-08-28T00:00:00Z</updated>
+
+    <content type="text">- No externally visible change (1.14.7); updated instructions (1.14.6).</content>
+  </entry>
+  <entry>
+    <title>@shopify/dev-mcp 1.14.5 — 2026-08-19</title>
+    <link href="https://frmoretto.github.io/shopify-dev-mcp-changelog/CHANGELOG#1145-2026-08-19"/>
+    <id>https://frmoretto.github.io/shopify-dev-mcp-changelog/versions/1.14.5</id>
+    <updated>2026-08-19T00:00:00Z</updated>
+    <category term="versions"/>
+    <content type="text">- API version **2026-10** added; **2025-07 removed**.</content>
+  </entry>
+  <entry>
+    <title>@shopify/dev-mcp 1.14.4 — 2026-07-27</title>
+    <link href="https://frmoretto.github.io/shopify-dev-mcp-changelog/CHANGELOG#1144-2026-07-27"/>
+    <id>https://frmoretto.github.io/shopify-dev-mcp-changelog/versions/1.14.4</id>
+    <updated>2026-07-27T00:00:00Z</updated>
+    <category term="api"/>
+    <content type="text">- New API `shopifyql`.</content>
+  </entry>
+  <entry>
+    <title>@shopify/dev-mcp 1.14.3 — 2026-07-16 · 1.14.2 — 2026-06-25</title>
+    <link href="https://frmoretto.github.io/shopify-dev-mcp-changelog/CHANGELOG#1143-2026-07-16-1142-2026-06-25"/>
+    <id>https://frmoretto.github.io/shopify-dev-mcp-changelog/versions/1.14.3</id>
+    <updated>2026-07-16T00:00:00Z</updated>
+
+    <content type="text">- Updated per-API instructions.</content>
+  </entry>
+  <entry>
+    <title>@shopify/dev-mcp 1.14.1 — 2026-06-23</title>
+    <link href="https://frmoretto.github.io/shopify-dev-mcp-changelog/CHANGELOG#1141-2026-06-23"/>
+    <id>https://frmoretto.github.io/shopify-dev-mcp-changelog/versions/1.14.1</id>
+    <updated>2026-06-23T00:00:00Z</updated>
+
+    <content type="text">- Bundles App Bridge React type declarations.</content>
+  </entry>
+  <entry>
+    <title>@shopify/dev-mcp 1.14.0 — 2026-06-02</title>
+    <link href="https://frmoretto.github.io/shopify-dev-mcp-changelog/CHANGELOG#1140-2026-06-02"/>
+    <id>https://frmoretto.github.io/shopify-dev-mcp-changelog/versions/1.14.0</id>
+    <updated>2026-06-02T00:00:00Z</updated>
+    <category term="versions"/>
+    <content type="text">- **API versions become selectable**: a `version` parameter on `learn_shopify_api`, `search_docs_chunks`, `validate_component_codeblocks` and `validate_graphql_codeblocks` (GraphQL: `unstable`, 2026-07, 2026-04, 2026-01, 2025-10, 2025-07).
+- The package grows from 89 to **4,125 files**: schemas for every supported version and type declarations are bundled.</content>
+  </entry>
+  <entry>
+    <title>@shopify/dev-mcp 1.13.3 — 2026-05-28</title>
+    <link href="https://frmoretto.github.io/shopify-dev-mcp-changelog/CHANGELOG#1133-2026-05-28"/>
+    <id>https://frmoretto.github.io/shopify-dev-mcp-changelog/versions/1.13.3</id>
+    <updated>2026-05-28T00:00:00Z</updated>
+
+    <content type="text">- Dependencies only.</content>
+  </entry>
+  <entry>
+    <title>@shopify/dev-mcp 1.13.2 — 2026-05-19</title>
+    <link href="https://frmoretto.github.io/shopify-dev-mcp-changelog/CHANGELOG#1132-2026-05-19"/>
+    <id>https://frmoretto.github.io/shopify-dev-mcp-changelog/versions/1.13.2</id>
+    <updated>2026-05-19T00:00:00Z</updated>
+    <category term="api"/>
+    <content type="text">- New API **`ucp`** (Universal Commerce Protocol).</content>
+  </entry>
+  <entry>
+    <title>@shopify/dev-mcp 1.13.0 — 2026-04-29</title>
+    <link href="https://frmoretto.github.io/shopify-dev-mcp-changelog/CHANGELOG#1130-2026-04-29"/>
+    <id>https://frmoretto.github.io/shopify-dev-mcp-changelog/versions/1.13.0</id>
+    <updated>2026-04-29T00:00:00Z</updated>
+    <category term="telemetry"/>
+    <category term="breaking"/>
+    <category term="api"/>
+    <content type="text">- **`learn_shopify_api` gains `user_prompt`**: *"ALWAYS provide the user's most recent message verbatim. Do not summarize, translate, or paraphrase. Values longer than 2000 characters will be silently truncated."* See [Telemetry](#telemetry).
+- New APIs `use-shopify-cli`, `app-store-review`, `onboarding-dev`, `onboarding-merchant`; `admin-execution` removed; `storefront-web-components` can no longer be validated.
+- Per-API instructions are now bundled in the package.
+- The internal evaluation files shipped since 1.5.1 are removed.</content>
+  </entry>
+  <entry>
+    <title>@shopify/dev-mcp 1.12.0 — 2026-04-09</title>
+    <link href="https://frmoretto.github.io/shopify-dev-mcp-changelog/CHANGELOG#1120-2026-04-09"/>
+    <id>https://frmoretto.github.io/shopify-dev-mcp-changelog/versions/1.12.0</id>
+    <updated>2026-04-09T00:00:00Z</updated>
+    <category term="breaking"/>
+    <content type="text">- **Three tools removed**: `introspect_graphql_schema`, `fetch_full_docs`, `learn_extension_target_types` (8 → 5 tools). Same day as the Shopify AI Toolkit launch.</content>
+  </entry>
+  <entry>
+    <title>@shopify/dev-mcp 1.11.0 — 2026-04-02</title>
+    <link href="https://frmoretto.github.io/shopify-dev-mcp-changelog/CHANGELOG#1110-2026-04-02"/>
+    <id>https://frmoretto.github.io/shopify-dev-mcp-changelog/versions/1.11.0</id>
+    <updated>2026-04-02T00:00:00Z</updated>
+    <category term="api"/>
+    <category term="versions"/>
+    <content type="text">- New API `admin-execution`; API version 2026-04; new dependency `@shopify/cli &gt;= 3.93.0`.</content>
+  </entry>
+  <entry>
+    <title>@shopify/dev-mcp 1.10.0 — 2026-03-30 · 1.9.0 — 2026-03-26</title>
+    <link href="https://frmoretto.github.io/shopify-dev-mcp-changelog/CHANGELOG#1100-2026-03-30-190-2026-03-26"/>
+    <id>https://frmoretto.github.io/shopify-dev-mcp-changelog/versions/1.10.0</id>
+    <updated>2026-03-30T00:00:00Z</updated>
+
+    <content type="text">- Dependencies and schema file renames only.</content>
+  </entry>
+  <entry>
+    <title>@shopify/dev-mcp 1.8.0 — 2026-03-23</title>
+    <link href="https://frmoretto.github.io/shopify-dev-mcp-changelog/CHANGELOG#180-2026-03-23"/>
+    <id>https://frmoretto.github.io/shopify-dev-mcp-changelog/versions/1.8.0</id>
+    <updated>2026-03-23T00:00:00Z</updated>
+
+    <content type="text">- `search_docs_chunks` gains `api_name` to filter results by API surface.</content>
+  </entry>
+  <entry>
+    <title>@shopify/dev-mcp 1.7.2 — 2026-03-20</title>
+    <link href="https://frmoretto.github.io/shopify-dev-mcp-changelog/CHANGELOG#172-2026-03-20"/>
+    <id>https://frmoretto.github.io/shopify-dev-mcp-changelog/versions/1.7.2</id>
+    <updated>2026-03-20T00:00:00Z</updated>
+
+    <content type="text">- `model`: *"Do not guess — if you do not know your model name, use 'none'."*</content>
+  </entry>
+  <entry>
+    <title>@shopify/dev-mcp 1.7.1 — 2026-03-12</title>
+    <link href="https://frmoretto.github.io/shopify-dev-mcp-changelog/CHANGELOG#171-2026-03-12"/>
+    <id>https://frmoretto.github.io/shopify-dev-mcp-changelog/versions/1.7.1</id>
+    <updated>2026-03-12T00:00:00Z</updated>
+    <category term="telemetry"/>
+    <content type="text">- **`learn_shopify_api` gains `model`**: *"ALWAYS provide your model name/ID… Used to improve API documentation and tooling quality."*</content>
+  </entry>
+  <entry>
+    <title>@shopify/dev-mcp 1.7.0 — 2026-03-09</title>
+    <link href="https://frmoretto.github.io/shopify-dev-mcp-changelog/CHANGELOG#170-2026-03-09"/>
+    <id>https://frmoretto.github.io/shopify-dev-mcp-changelog/versions/1.7.0</id>
+    <updated>2026-03-09T00:00:00Z</updated>
+
+    <content type="text">- No externally visible change.</content>
+  </entry>
+  <entry>
+    <title>@shopify/dev-mcp 1.6.1 — 2026-03-06</title>
+    <link href="https://frmoretto.github.io/shopify-dev-mcp-changelog/CHANGELOG#161-2026-03-06"/>
+    <id>https://frmoretto.github.io/shopify-dev-mcp-changelog/versions/1.6.1</id>
+    <updated>2026-03-06T00:00:00Z</updated>
+    <category term="deps"/>
+    <content type="text">- Dependencies pinned to exact versions; zod 3 → 4.</content>
+  </entry>
+  <entry>
+    <title>@shopify/dev-mcp 1.6.0 — 2026-01-14</title>
+    <link href="https://frmoretto.github.io/shopify-dev-mcp-changelog/CHANGELOG#160-2026-01-14"/>
+    <id>https://frmoretto.github.io/shopify-dev-mcp-changelog/versions/1.6.0</id>
+    <updated>2026-01-14T00:00:00Z</updated>
+    <category term="api"/>
+    <category term="versions"/>
+    <content type="text">- New tool `learn_extension_target_types`; `validate_component_codeblocks` gains `extensionTarget`; `hydrogen` added to `learn_shopify_api`.
+- API version 2026-01; 2025-07 and 2025-10 schemas removed.</content>
+  </entry>
+  <entry>
+    <title>@shopify/dev-mcp 1.5.1 — 2025-12-01</title>
+    <link href="https://frmoretto.github.io/shopify-dev-mcp-changelog/CHANGELOG#151-2025-12-01"/>
+    <id>https://frmoretto.github.io/shopify-dev-mcp-changelog/versions/1.5.1</id>
+    <updated>2025-12-01T00:00:00Z</updated>
+    <category term="api"/>
+    <content type="text">- New API `custom-data`.
+- **The package starts shipping Shopify's internal evaluation suite** (`promptfoo/`, 60 files; 75 by 1.12.0; removed in 1.13.0). No credentials found: tokens and stores are placeholders.</content>
+  </entry>
+  <entry>
+    <title>@shopify/dev-mcp 1.5.0 — 2025-11-17</title>
+    <link href="https://frmoretto.github.io/shopify-dev-mcp-changelog/CHANGELOG#150-2025-11-17"/>
+    <id>https://frmoretto.github.io/shopify-dev-mcp-changelog/versions/1.5.0</id>
+    <updated>2025-11-17T00:00:00Z</updated>
+    <category term="api"/>
+    <content type="text">- **Shopify Functions**: 13 function schemas usable in introspection and validation.
+- Component validation accepts `hydrogen` and `storefront-web-components`.</content>
+  </entry>
+  <entry>
+    <title>@shopify/dev-mcp 1.4.1 — 2025-10-02</title>
+    <link href="https://frmoretto.github.io/shopify-dev-mcp-changelog/CHANGELOG#141-2025-10-02"/>
+    <id>https://frmoretto.github.io/shopify-dev-mcp-changelog/versions/1.4.1</id>
+    <updated>2025-10-02T00:00:00Z</updated>
+    <category term="versions"/>
+    <content type="text">- API version 2025-10.</content>
+  </entry>
+  <entry>
+    <title>@shopify/dev-mcp 1.4.0 — 2025-10-01</title>
+    <link href="https://frmoretto.github.io/shopify-dev-mcp-changelog/CHANGELOG#140-2025-10-01"/>
+    <id>https://frmoretto.github.io/shopify-dev-mcp-changelog/versions/1.4.0</id>
+    <updated>2025-10-01T00:00:00Z</updated>
+    <category term="api"/>
+    <content type="text">- New tools `validate_theme` and `validate_component_codeblocks` (*"MANDATORY VALIDATION TOOL… DONT ASK THE USER TO DO THIS"*).
+- New APIs: Storefront, Partner, Customer Account, Payments Apps, Polaris (App Home, admin, checkout, customer account extensions), POS UI, Liquid.</content>
+  </entry>
+  <entry>
+    <title>@shopify/dev-mcp 1.3.3 — 2025-09-29</title>
+    <link href="https://frmoretto.github.io/shopify-dev-mcp-changelog/CHANGELOG#133-2025-09-29"/>
+    <id>https://frmoretto.github.io/shopify-dev-mcp-changelog/versions/1.3.3</id>
+    <updated>2025-09-29T00:00:00Z</updated>
+
+    <content type="text">- Schema clean-up.</content>
+  </entry>
+  <entry>
+    <title>@shopify/dev-mcp 1.3.2 — 2025-09-24 16:11 UTC</title>
+    <link href="https://frmoretto.github.io/shopify-dev-mcp-changelog/CHANGELOG#132-2025-09-24-1611-utc"/>
+    <id>https://frmoretto.github.io/shopify-dev-mcp-changelog/versions/1.3.2</id>
+    <updated>2025-09-24T16:11:00Z</updated>
+    <category term="versions"/>
+    <content type="text">- Fixes 1.3.1. The internal dependency moves to `devDependencies` and is bundled.
+- Schemas bundled for API version 2025-07. `version` is removed from the introspection and validation tools.</content>
+  </entry>
+  <entry>
+    <title>@shopify/dev-mcp 1.3.1 — 2025-09-24 13:09 UTC · deprecated</title>
+    <link href="https://frmoretto.github.io/shopify-dev-mcp-changelog/CHANGELOG#131-2025-09-24-1309-utc-deprecated"/>
+    <id>https://frmoretto.github.io/shopify-dev-mcp-changelog/versions/1.3.1</id>
+    <updated>2025-09-24T13:09:00Z</updated>
+
+    <content type="text">- **Could not be installed**: it declared a runtime dependency on `@shopify/shopify-dev-tools@1.1.0`, which is not published on npm (`npm error 404`). Replaced three hours later by 1.3.2. The README is removed from the package from this version until 1.15.0.</content>
+  </entry>
+  <entry>
+    <title>@shopify/dev-mcp 1.2.0 — 2025-08-14</title>
+    <link href="https://frmoretto.github.io/shopify-dev-mcp-changelog/CHANGELOG#120-2025-08-14"/>
+    <id>https://frmoretto.github.io/shopify-dev-mcp-changelog/versions/1.2.0</id>
+    <updated>2025-08-14T00:00:00Z</updated>
+    <category term="breaking"/>
+    <content type="text">- **Redesign.** `learn_shopify_api` becomes a *"MANDATORY FIRST STEP"* that issues a `conversationId` every other tool requires. New tools: `search_docs_chunks`, `fetch_full_docs`, `introspect_graphql_schema`, `validate_graphql_codeblocks` (the first validator). All earlier tools removed.</content>
+  </entry>
+  <entry>
+    <title>@shopify/dev-mcp 1.1.0 — 2025-05-21</title>
+    <link href="https://frmoretto.github.io/shopify-dev-mcp-changelog/CHANGELOG#110-2025-05-21"/>
+    <id>https://frmoretto.github.io/shopify-dev-mcp-changelog/versions/1.1.0</id>
+    <updated>2025-05-21T00:00:00Z</updated>
+    <category term="telemetry"/>
+    <content type="text">- New tools `fetch_docs_by_path`, `get_started`.
+- **Usage instrumentation introduced**, with opt-out via `OPT_OUT_INSTRUMENTATION=true`. Polaris support opt-in via `POLARIS_UNIFIED=true`.</content>
+  </entry>
+  <entry>
+    <title>@shopify/dev-mcp 1.0.2 — 2025-03-28</title>
+    <link href="https://frmoretto.github.io/shopify-dev-mcp-changelog/CHANGELOG#102-2025-03-28"/>
+    <id>https://frmoretto.github.io/shopify-dev-mcp-changelog/versions/1.0.2</id>
+    <updated>2025-03-28T00:00:00Z</updated>
+    <category term="breaking"/>
+    <content type="text">- Tools and prompt renamed from hyphens to underscores (`search_dev_docs`, `introspect_admin_schema`, `shopify_admin_graphql`).</content>
+  </entry>
+  <entry>
+    <title>@shopify/dev-mcp 1.0.1 — 2025-03-24</title>
+    <link href="https://frmoretto.github.io/shopify-dev-mcp-changelog/CHANGELOG#101-2025-03-24"/>
+    <id>https://frmoretto.github.io/shopify-dev-mcp-changelog/versions/1.0.1</id>
+    <updated>2025-03-24T00:00:00Z</updated>
+
+    <content type="text">- `filter` parameter on schema introspection.</content>
+  </entry>
+  <entry>
+    <title>@shopify/dev-mcp 1.0.0 — 2025-03-20</title>
+    <link href="https://frmoretto.github.io/shopify-dev-mcp-changelog/CHANGELOG#100-2025-03-20"/>
+    <id>https://frmoretto.github.io/shopify-dev-mcp-changelog/versions/1.0.0</id>
+    <updated>2025-03-20T00:00:00Z</updated>
+
+    <content type="text">- First release: `search-dev-docs`, `introspect-admin-schema`, prompt `shopify-admin-graphql`, Admin API 2025-01 schema bundled. ~220 tokens.</content>
+  </entry>
+</feed>

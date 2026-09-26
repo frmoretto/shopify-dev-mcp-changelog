@@ -1,0 +1,7 @@
+title: "@shopify/dev-mcp — independent changelog"
+description: Every published version of the Shopify Dev MCP server, recorded and diffed.
+theme: jekyll-theme-primer
+include:
+  - feed.xml
+exclude:
+  - new-versions.txt

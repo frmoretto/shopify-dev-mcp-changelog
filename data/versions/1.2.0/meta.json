@@ -1,0 +1,35 @@
+{
+ "version": "1.2.0",
+ "published": "2025-08-14T09:45:49.244Z",
+ "collected": "2026-09-26",
+ "run": "ok",
+ "serverInfo": {
+  "name": "shopify-dev-mcp",
+  "version": "1.2.0"
+ },
+ "protocolVersion": "2024-11-05",
+ "license": "ISC",
+ "repository": null,
+ "dependencies": {
+  "@modelcontextprotocol/sdk": "^1.15.1",
+  "@shopify/theme-check-common": "^3.20.0",
+  "@shopify/theme-check-docs-updater": "^3.20.0",
+  "@shopify/theme-check-node": "^3.20.0",
+  "env-paths": "^3.0.0",
+  "graphql": "^16.11.0",
+  "zod": "^3.24.2"
+ },
+ "internalDevTools": null,
+ "fileCount": 4,
+ "hasReadme": true,
+ "bundledData": {
+  "graphqlSchemas": [],
+  "componentSchemas": [],
+  "apiInstructions": [],
+  "typeDeclarations": {
+   "files": 0,
+   "packages": []
+  },
+  "internalEvalFiles": 0
+ }
+}
